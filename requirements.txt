@@ -1,0 +1,4 @@
+dynaconf==2.2.1
+Flask==2.2.3
+gunicorn==20.0.4
+importlib-resources==1.4.0
