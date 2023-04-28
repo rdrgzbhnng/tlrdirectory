@@ -1,2 +1,12 @@
-p {color: #26b72b;}
-input {padding: 10px; border: 2px solid #bbb; border-radius: 8px; font-size: 14px; font-weight: bold; width: 400px}
+input {padding: 10px; border: 2px solid #bbb; border-radius: 8px; font-size: 14px; font-weight: bold; width: 460px;}
+li {padding: 8px; border: 1px solid #cccccc; margin-top: -1px;}
+li.main {background-color: #f1f1f1; line-height: 36px;}
+li span {display: block;}
+ul{list-style-type: none; padding: 0; width: 480px;}
+svg {width:24px; height: 24px;}
+li svg {float: left; margin: 6px 12px 0 4px;}
+span#tools {display: inline-table; margin-left: -60px; position: absolute;}
+span#tools svg {display: table; position: relative; top: 9px;}
+.hl {background-color: yellow;}
+span#tools svg {fill: #bbb;}
+span#tools svg:hover {fill: #444; background-color: #f1f1f1; border-radius: 30px;}
