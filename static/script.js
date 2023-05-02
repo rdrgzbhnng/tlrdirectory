@@ -226,3 +226,13 @@ clickToCleanIt = function() {
   resultDom.innerHTML = "";
   document.getElementById("mainQuery").value="";  
 };
+
+clickToOpenIt = function() {
+  document.getElementById("modalMask").classList.add("visible");
+  document.getElementById("modalFilters").classList.add("visible");
+};
+
+clickToCloseIt = function() {
+  document.getElementById("modalMask").classList.remove("visible");  
+  document.getElementById("modalFilters").classList.remove("visible");  
+};
