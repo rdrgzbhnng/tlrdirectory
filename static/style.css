@@ -74,7 +74,6 @@ span#tools {
 }
 
 span#tools svg {
-  display: table;
   position: relative;
   top: 9px;
 }
@@ -157,7 +156,7 @@ div#icons_header_without_button {
 }
 
 div#icons_header_without_button {
-  background-image: url("imgs/icons_header_without_button.png");
+  background-image: url("imgs/icons_without_button.png");
 }
 
 div#bg_main {
