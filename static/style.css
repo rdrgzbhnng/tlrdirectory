@@ -1,26 +1,134 @@
-body {font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, ‘Roboto’, ‘Oxygen’, ‘Ubuntu’, ‘Fira Sans’, ‘Droid Sans’, ’Helvetica Neue ’, sans-serif;
-font-size: 14px}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, ‘Roboto’, ‘Oxygen’, ‘Ubuntu’, ‘Fira Sans’, ‘Droid Sans’, ’Helvetica Neue ’, sans-serif;
+  font-size: 14px
+}
 
-input {padding: 10px; border: 2px solid #bbb; border-radius: 8px; font-size: 14px; font-weight: bold; width: 528px;}
-li {padding: 8px; border: 1px solid #ccc; border-top: none; margin-top: -1px; font-size: 12px; background-color: white}
-li.main {background-color: #f1f1f1; line-height: 29px; border: 1px solid #ccc; }
-li span {display: block;}
-ul{list-style-type: none; padding: 0; width: 552px; margin-top:-20px}
-svg {width:24px; height: 24px;}
-li svg {float: left; margin: 6px 12px 0 4px;}
-span#tools {display: inline-table; margin-left: -60px; position: absolute;}
-span#tools svg {display: table; position: relative; top: 9px;}
-.hl {background-color: yellow;}
-span#tools svg {fill: #bbb;}
-span#tools svg:hover {fill: #444; background-color: #f1f1f1; border-radius: 30px;}
+input {
+  padding: 10px;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 528px;
+}
 
-svg#filterSVG {width: 570px; height: 810px}
-#modalMask {background-color: rgba(0,0,0,0.64); position: absolute; width: 0%; height: 0%; top: 0; left: 0}
-#modalMask.visible {width: 100%; height: 100%;}
-#modalFilters {display: none}
-#modalFilters.visible {display: block; width: 570px; height: 810px; position: absolute; top: 50%; left: 50%; margin: -405px 0 0 -285px;}
+li {
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-top: 0px;
+  font-size: 12px;
+  background-color: white
+}
 
-input::placeholder {font-weight: normal;}
+li:hover {
+  background-color: #f8f9fa;
+}
+
+li.main {
+  background-color: #fff5d9;
+  line-height: 29px;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+}
+
+li.main:hover {
+  background-color: #ffefc5;
+  line-height: 29px;
+  border: 1px solid #ccc;
+}
+
+li span {
+  display: block;
+}
+
+li a {
+  display: table;
+  width: 530px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 552px;
+  margin-top:-15px
+}
+
+svg {
+  width:24px;
+  height: 24px;
+}
+
+li svg {
+  float: left;
+  margin: 6px 12px 0 4px;
+}
+
+span#tools {
+  display: inline-table;
+  margin-left: -60px;
+  position: absolute;
+}
+
+span#tools svg {
+  display: table;
+  position: relative;
+  top: 9px;
+}
+
+.hl {
+  background-color: yellow;
+}
+
+span#tools svg {
+  fill: #bbb;
+}
+
+span#tools svg:hover {
+  fill: #444;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+}
+
+svg#filterSVG {
+  width: 570px;
+  height: 810px
+}
+
+#modalMask {
+  background-color: rgba(0,0,0,0.64);
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0
+}
+
+#modalMask.visible {
+  width: 100%;
+  height: 100%;
+}
+
+#modalFilters {
+  display: none;
+}
+
+#modalFilters.visible {
+  display: block;
+  width: 570px;
+  height: 810px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -405px 0 0 -285px;
+}
+
+input::placeholder {
+  font-weight: normal;
+}
 
 body {
   background-image: url("imgs/header.png");
@@ -28,7 +136,7 @@ body {
   background-position-x: left;
   background-position-y: top;
   background-size: 2562px 44px;
-  height: 44px;
+  height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -40,38 +148,39 @@ div#icons_header {
   background-position-x: left;
   background-position-y: top;
   background-size: 494px 112px;
-  width: 494px; 
+  width: 494px;
   height: 112px;
   position: absolute;
   top: 0;
   right: 0;
-  }
+}
 
 div#bg_main {
   background-image: url("imgs/hero.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-size: 552px 351px;
-  width: 552px; 
-  height: 450px;
+  background-size: 552px 348px;
+  width: 552px;
+  height: 440px;
   margin: auto;
-  padding-top: 300px;
-  }
-  
-  
+  padding-top: 280px;
+}
+
 div#bg_bottom {
   background-image: url("imgs/bottom.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 2562px 158px;
-  height: 158px;
+  height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-footer {width: 1000px; margin: auto}
-  
-  
+footer {
+  width: 1000px;
+  margin: auto
+}
+
