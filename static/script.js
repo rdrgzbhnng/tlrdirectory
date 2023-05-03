@@ -54,19 +54,19 @@ bordeauxTexting = function(st) {
 
 phoneTexting = function(st) {
   getLIs(st);
-  if (st.includes("695892792")) {
+  if (st.includes("695892792") || st.includes("695 892 792") || st.includes("69 589 2792") || st.includes("69 5892792") ||  st.includes("695 892792") || st.includes("69 58 92 79 2")  || st.includes("69 58 92 792") || st.includes("695 89 27 92") || st.includes("69 58 92792") || st.includes("69 589 2792") || st.includes("6958 92792") || st.includes("695892 792")) {
     resultDom.innerHTML = pressEnter + phFr05 + moreInformation;
-  } else if (st.includes("69589279")) {
+  } else if (st.includes("69589279") || st.includes("695 892 79") || st.includes("69 589 279") || st.includes("69 589279") ||  st.includes("695 89279") || st.includes("69 58 92 79")  || st.includes("69 58 9279")) {
     resultDom.innerHTML = pressEnter + phFr05 + moreInformation;
-  } else if (st.includes("6958927")) {
+  } else if (st.includes("6958927") || st.includes("695 892 7") || st.includes("69 589 27") || st.includes("69 58927") ||  st.includes("695 8927") || st.includes("69 58 92 7") || st.includes("69 58 927")) {
     resultDom.innerHTML = pressEnter + phFr05 + moreInformation;
-  } else if (st.includes("695892")) {
+  } else if (st.includes("695892") || st.includes("695 892") || st.includes("69 589 2") || st.includes("69 58 92")) {
     resultDom.innerHTML = pressEnter + phFr02 + phFr05 + moreInformation;
-  } else if (st.includes("69589")) {
+  } else if (st.includes("69589") || st.includes("695 89") || st.includes("69 589") || st.includes("69 58 9")) {
     resultDom.innerHTML = pressEnter + phFr02 + phFr03 + phFr05 + moreInformation;
-  } else if (st.includes("6958")) {
+  } else if (st.includes("6958") || st.includes("695 8") || st.includes("69 58")) {
     resultDom.innerHTML = pressEnter + phFr02 + phFr03 + phFr05 + docFr23 + moreInformation;
-  } else if (st.includes("695")) {
+  } else if (st.includes("695") || st.includes("69 5")) {
     resultDom.innerHTML = pressEnter + phFr01 + phFr02 + docFr04 + phFr03 + docFr22 + docFr23 + phFr24 + moreInformation;
   } else if (st.includes("69")) {
     resultDom.innerHTML = pressEnter + phFr01 + phFr02 + docFr04 + phFr03 + phBo21 + docFr22 + docFr23 + moreInformation;
@@ -151,7 +151,7 @@ getLIs = function(st) {
   findWarehouses              = '<li class="main"><a href="warehouses"><svg><use xlink:href="#search"></svg>Find "<b>warehouses</b>"</a></li>';
   findCoSpanish               = '<li class="main"><a href="spanishcontacts"><svg><use xlink:href="#search"></svg>Find contacts speak "<b>Spanish</b>"</a></li>';
   findWarehousesInBordeaux    = '<li class="main"><a href="frbrwarehouses"><svg><use xlink:href="#search"></svg>Find "<b>warehouses</b> in "<b>Bordeaux</b>"</a></li>';
-  moreInformation             = '<li class="main"><a href="frbrwarehouses"><svg><use xlink:href="#search"></svg>Not the results you had expected? <b class="link">More information</b></a></li>';
+  moreInformation             = '<li class="main"><a href="moreInformation"><svg><use xlink:href="#search"></svg>Not the results you had expected? <b class="link">More information</b></a></li>';
   phFr01                      = '<li><a href="companyprofile"><svg><use xlink:href="#phone"></svg><b>FR 56380	SDV TRANSPORT SAS</b><span>VAT: FR8593955615	Id: 44321890</span></a></li>';
   phFr02                      = '<li><a href="companyprofile"><svg><use xlink:href="#phone"></svg><b>FR 77950	STTEFG INTERNATIONAL</b><span>VAT: FR6658280687	Id: 66453584</span></a></li>';
   phFr03                      = '<li><a href="companyprofile"><svg><use xlink:href="#phone"></svg><b>FR 91300	TPC COURCELLAS</b><span>VAT: FR1937521762	Id: 50001111</span></a></li>';

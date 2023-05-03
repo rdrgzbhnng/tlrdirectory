@@ -305,6 +305,14 @@ div#frbrwarehousesspanishcontacts_bg {
   background-size: 1200px 940px;
 }
 
+div#moreInformation_bg {
+  background-image: url("imgs/moreInformation_bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+  background-size: 1200px 940px;
+}
+
 div#search_input {
   width: 552px;
   height: 40px;
