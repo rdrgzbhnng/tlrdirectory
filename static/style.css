@@ -238,25 +238,16 @@ div#company_profile_patche {
   padding: 0;
 }
 
+div#warehouses_bg {
+  background-image: url("imgs/warehouses_bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+  background-size: 1200px 940px;
+}
+
 div#frbrcompanies_bg {
   background-image: url("imgs/frbrcompanies_bg.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 0;
-  background-size: 1200px 940px;
-}
-
-div#frbrwarehouses_bg {
-  background-image: url("imgs/frbrwarehouses_bg.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 0;
-  background-size: 1200px 940px;
-}
-
-
-div#frbrwarehousesspanishcontacts_bg {
-  background-image: url("imgs/frbrwarehousesspanishcontacts_bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 0;
@@ -271,8 +262,32 @@ div#spanishcontacts_bg {
   background-size: 1200px 940px;
 }
 
-div#warehouses_bg {
-  background-image: url("imgs/warehouses_bg.png");
+div#frbrwarehouses_bg {
+  background-image: url("imgs/frbrwarehouses_bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+  background-size: 1200px 940px;
+}
+
+div#fr33spanishcontacts_bg {
+  background-image: url("imgs/fr33spanishcontacts_bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+  background-size: 1200px 940px;
+}
+
+div#warehousesspanishcontacts_bg {
+  background-image: url("imgs/warehousesspanishcontacts_bg.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0;
+  background-size: 1200px 940px;
+}
+
+div#frbrwarehousesspanishcontacts_bg {
+  background-image: url("imgs/frbrwarehousesspanishcontacts_bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 0;
@@ -292,4 +307,3 @@ footer {
   width: 1000px;
   margin: auto
 }
-
