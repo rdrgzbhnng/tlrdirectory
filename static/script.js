@@ -12,41 +12,7 @@ mainQuery.oninput = function() {
   warehouseANDbordeaux(st);
   warehouseANDbordeauxANDspanish(st);
 
-  stlc = st.toLowerCase();
-  input_mainQuery = document.getElementById("mainQuery");
-  input_mainQuery.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-
-      if (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) {
-        window.location = '/warehouses' ;
-      }
-      if (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) {
-        window.location = '/frbrcompanies' ;
-      }
-      if (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español")) {
-        window.location = '/spanishcontacts' ;
-      }
-      if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
-      && (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33"))) {
-        window.location = '/frbrwarehouses' ;
-      }
-      if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
-      && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
-        window.location = '/fr33spanishcontacts' ;
-      }
-      if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
-      && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
-        window.location = '/warehousesspanishcontacts' ;
-      }
-      if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
-        && (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
-        && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
-        window.location = '/frbrwarehousesspanishcontacts' ;
-      }
-    }
-  });
-
+  listen_keypress(st);
 };
 
 cleanIt = function(st) {
@@ -261,4 +227,41 @@ clickToOpenIt = function() {
 clickToCloseIt = function() {
   document.getElementById("modalMask").classList.remove("visible");  
   document.getElementById("modalFilters").classList.remove("visible");  
+};
+
+listen_keypress = function(st) {
+  stlc = st.toLowerCase();
+  input_mainQuery = document.getElementById("mainQuery");
+  input_mainQuery.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+
+      if (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) {
+        window.location = '/warehouses' ;
+      }
+      if (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) {
+        window.location = '/frbrcompanies' ;
+      }
+      if (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español")) {
+        window.location = '/spanishcontacts' ;
+      }
+      if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+      && (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33"))) {
+        window.location = '/frbrwarehouses' ;
+      }
+      if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
+      && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
+        window.location = '/fr33spanishcontacts' ;
+      }
+      if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+      && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
+        window.location = '/warehousesspanishcontacts' ;
+      }
+      if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
+        && (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+        && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
+        window.location = '/frbrwarehousesspanishcontacts' ;
+      }
+    }
+  });
 };
