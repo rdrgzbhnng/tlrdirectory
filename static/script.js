@@ -38,7 +38,7 @@ warehouseTexting = function(stlc) {
 bordeauxTexting = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33") || stlc.includes("33***") || stlc.includes("33000") || stlc.includes("33 ")) 
+  if (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33") || stlc.includes("33***") || stlc.includes("33000")) 
   {
     resultDom.innerHTML = pressEnter + findCoFr33Bordeaux + coFrWarehouseBordeauxName12 + coBordeaux16 + coBordeaux17 + coBordeaux18 + coBordeaux19 + coFrBordeauxName14 + coBordeaux20;
   } else if (stlc.includes("bordea")) {
@@ -261,6 +261,9 @@ listen_keypress = function(st) {
         && (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
         && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
         window.location = '/frbrwarehousesspanishcontacts' ;
+      }
+      if (stlc.includes("1234567890") || stlc.includes("mosca") || stlc.includes("695892792")) {
+        window.location = '/companyprofile' ;
       }
     }
   });

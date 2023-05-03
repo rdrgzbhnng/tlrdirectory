@@ -68,7 +68,6 @@ li svg {
 }
 
 span#tools {
-  display: inline-table;
   margin-left: -60px;
   position: absolute;
 }
