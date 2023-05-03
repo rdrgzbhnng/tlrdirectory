@@ -146,7 +146,7 @@ warehouseANDbordeauxANDspanish = function(st) {
 };
 
 getLIs = function(st) {
-  pressEnter                  = '<li class="main"><a href="queryenter"><svg><use xlink:href="#enter"></svg>Press Enter to get "<b><i>' + st + '</i></b>"</a></li>';
+  pressEnter                  = '<li class="main no_hover"><svg><use xlink:href="#enter"></svg>Press Enter to get "<b><i>' + st + '</i></b>"</li>';
   findCoFr33Bordeaux          = '<li class="main"><a href="frbrcompanies"><svg><use xlink:href="#search"></svg>Find companies in "<b>FR Bordeaux</b>"</a></li>';
   findWarehouses              = '<li class="main"><a href="warehouses"><svg><use xlink:href="#search"></svg>Find "<b>warehouses</b>"</a></li>';
   findCoSpanish               = '<li class="main"><a href="spanishcontacts"><svg><use xlink:href="#search"></svg>Find contacts speak "<b>Spanish</b>"</a></li>';
@@ -262,7 +262,7 @@ listen_keypress = function(st) {
         && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
         window.location = '/frbrwarehousesspanishcontacts' ;
       }
-      if (stlc.includes("1234567890") || stlc.includes("mosca") || stlc.includes("695892792")) {
+      if (stlc.includes("1234") || stlc.includes("mosca") || stlc.includes("69589")) {
         window.location = '/companyprofile' ;
       }
     }

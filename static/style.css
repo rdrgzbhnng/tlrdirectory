@@ -36,6 +36,18 @@ li.main:hover {
   background-color: #ffefc5;
   line-height: 29px;
   border: 1px solid #ccc;
+  cursor: default;
+}
+
+li.main.no_hover {
+  background-color: #fff5d9;
+  display: table;
+  width: 534px;
+  padding: 8px;
+}
+
+li.main.no_hover:hover {
+  background-color: #fff5d9;
 }
 
 li span {
