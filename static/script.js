@@ -22,7 +22,7 @@ cleanIt = function(st) {
 warehouseTexting = function(stlc) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("warehouse")) {
+  if (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) {
     resultDom.innerHTML = pressEnter + findWarehouses + wName33 + wName34 + wName35 + wName36 + wName37 + wName38 + wName39;
   } else if (stlc.includes("warehous") || stlc.includes("warehou")) {
     resultDom.innerHTML = pressEnter + coFrWarehouseBordeauxName12;
@@ -36,10 +36,7 @@ warehouseTexting = function(stlc) {
 bordeauxTexting = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("bordeaux")
-       || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") 
-       || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")
-       || stlc.includes("33***") || stlc.includes("33000") || stlc.includes("33 ")) 
+  if (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33") || stlc.includes("33***") || stlc.includes("33000") || stlc.includes("33 ")) 
   {
     resultDom.innerHTML = pressEnter + findCoFr33Bordeaux + coFrWarehouseBordeauxName12 + coBordeaux16 + coBordeaux17 + coBordeaux18 + coBordeaux19 + coFrBordeauxName14 + coBordeaux20;
   } else if (stlc.includes("bordea")) {
@@ -49,7 +46,7 @@ bordeauxTexting = function(st) {
   } else if (stlc.includes("bord")) {
     resultDom.innerHTML = pressEnter + coFrBordeauxName14 + coFrBordeName15 + bordName26 + bordName25 + bordName27 + bordName28;
   } else if (stlc.includes("bor")) {
-    resultDom.innerHTML = pressEnter + coFrBordeauxName14 + bName25 + borName26 + bName27 + borName28 + bName29 + bName30;
+    resultDom.innerHTML = pressEnter + coFrBordeauxName14 + bordName25 + bordName26 + bordName27 + bordName28 + bName29 + bName30;
   }
 };
 
@@ -102,7 +99,7 @@ numbersTexting = function(st) {
 spanishTexting = function(st){
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("spanish")) {
+  if (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español")) {
     resultDom.innerHTML = pressEnter + findCoSpanish + spanishCo40 + spanishCo41 + spanishCo42 + spanishCo43 + spanishCo44 + spanishCo45 + spanishCo46;
   } else if (stlc.includes("spanis") || stlc.includes("spani")) {
     resultDom.innerHTML = pressEnter + findCoSpanish + spanishCo47 + spanishCo40 + spanishCo48 + spanishCo49 + spanishCo42 + spanishCo43 + spanishCo44;
@@ -112,7 +109,8 @@ spanishTexting = function(st){
 warehouseANDbordeaux = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("warehouse") && stlc.includes("bordeaux")) {
+  if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+  && (stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33"))) {
     resultDom.innerHTML = pressEnter + findWarehousesInBordeaux + findCoFr33Bordeaux + coFrWarehouseBordeauxName12 + coFrBordeauxName14;
   }
 };
@@ -120,10 +118,8 @@ warehouseANDbordeaux = function(st) {
 bordeauxANDspanish = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if ((stlc.includes("bordeaux")
-       || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") 
-       || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
-       && stlc.includes("spanish")) {
+  if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
+  && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
     resultDom.innerHTML = pressEnter + findCoFr33Bordeaux +  findCoSpanish + coFrBordeauxName14 + coBordeaux18 + coBordeaux19;
   }
 };
@@ -131,7 +127,8 @@ bordeauxANDspanish = function(st) {
 warehouseANDspanish = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if (stlc.includes("warehouse") && stlc.includes("spanish")) {
+  if ((stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+  && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
     resultDom.innerHTML = pressEnter + findWarehouses + findCoSpanish + wareSP50 + wareSP51 + wareSP52 + wareSP53 + wareSP54 + wareSP55;   
   }
 };
@@ -139,11 +136,9 @@ warehouseANDspanish = function(st) {
 warehouseANDbordeauxANDspanish = function(st) {
   getLIs(st);
   stlc = st.toLowerCase();
-  if ((stlc.includes("bordeaux")
-       || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") 
-       || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
-       && stlc.includes("warehouse") 
-       && stlc.includes("spanish")) {
+  if ((stlc.includes("bordeaux") || stlc.includes("fr33") || stlc.includes("fr 33") || stlc.includes("fr-33") || stlc.includes("f33") || stlc.includes("f 33") || stlc.includes("f-33")) 
+  && (stlc.includes("warehouse") || stlc.includes("building") || stlc.includes("almacén") || stlc.includes("depósito") || stlc.includes("bodega")) 
+  && (stlc.includes("spanish") || stlc.includes("castellano") || stlc.includes("español"))) {
     resultDom.innerHTML = pressEnter + findWarehousesInBordeaux + findCoFr33Bordeaux + findCoSpanish + warehouseBordeauxSp57; 
   }
 };
@@ -184,8 +179,8 @@ getLIs = function(st) {
   bordName26                  = '<li><a href="companyprofile"><svg><use xlink:href="#company"></svg><b>FR 77950	STTEFG INTERNATIONAL</b><span>VAT: FR6658280687	Id: 66453584</span></a></li>';
   bordName27                  = '<li><a href="companyprofile"><svg><use xlink:href="#company"></svg><b>FR 91300	TPC COURCELLAS</b><span>VAT: FR1937521762	Id: 50001111</span></a></li>';
   bordName28                  = '<li><a href="companyprofile"><svg><use xlink:href="#company"></svg><b>FR 59390	ABC XPO FR CELL GROUP</b><span>VAT: FR69500233683	Id: 48420001</span></a></li>';
-  bName29                     = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 00000	B XXXXXXXXXXXXX</b><span>VAT: FR000000000	Id: 00000000</span></a></li>';
-  bName30                     = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 00000	B XXXXXXXXXXXXX</b><span>VAT: FR000000000	Id: 00000000</span></a></li>';
+  bName29                     = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 93210  BARBAR-YVES</b><span>VAT: FR52312316830 Id: 123456000</span></a></li>';
+  bName30                     = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 07370  BEAUGIER EXPRESS</b><span>VAT: FR12344321890  Id: 475903485</span></a></li>';
   boName31                    = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 00000	BO XXXXXXXXXXXX</b><span>VAT: FR000000000	Id: 00000000</span></a></li>';
   boName32                    = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 00000	BO XXXXXXXXXXXX</b><span>VAT: FR000000000	Id: 00000000</span></a></li>';
   borName32                   = '<li><a href="companyprofile"><svg><use xlink:href="#document"></svg><b>FR 00000	BO XXXXXXXXXXXX</b><span>VAT: FR000000000	Id: 00000000</span></a></li>';
@@ -216,11 +211,6 @@ getLIs = function(st) {
   wareSP56                    = '<li><a href="companyprofile"><svg><use xlink:href="#company"></svg><b>FR 33140	CONDITIONNEMENT TAVAUX</b><span>VAT: FR5896987337	Id: 62221082</span></a></li>';
   warehouseBordeauxSp57       = '<li><a href="companyprofile"><svg><use xlink:href="#company"></svg><b>FR 33100	BORDEAUX NORD TRANSP</b><span>VAT: FR8542337668	Id: 97234867</span></a></li>';
 };
-
-function changeColor(newColor) {
-  const elem = document.getElementById("para");
-  elem.style.color = newColor;
-}
 
 clickToCleanIt = function() {
   resultDom.innerHTML = "";
